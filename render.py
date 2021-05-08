@@ -21,6 +21,9 @@ class Renderer:
                 with open("thoughts/" + file, "r", encoding="utf-8") as f:
                     text = f.read()
                 text_html = markdown.markdown(text, extensions=['nl2br', 'tables'])
+
+                text_html = text_html.replace("<code>", "<pre><code>").replace("</code>", "</code></pre>")
+
                 raw_timestamp = file.split(".")[0]
                 date = datetime.strptime(raw_timestamp, "%Y%m%d%H%M")
                 date_str = date.strftime("%a, %b %d, %Y %I:%M %p")

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Thoughts</title>
+    <meta name="description" content="Micro Blog of Mark Zhang">
+    <meta name="author" content="Mark Zhang">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+
+    <!-- LaTeX rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.43/polyfill.min.js?features=es6" integrity="sha512-lvWiOP+aMKHllm4THsjzNleVuGOh0WGniJ3lgu/nvCbex1LlaQSxySUjAu/LTJw9FhnSL/PVYoQcckg1Q03+fQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.1.4/es5/tex-mml-chtml.min.js" integrity="sha512-S+79ClJq589gqNbddnVeTBL2CNIaYL3tKs3oPaidENSxukCt0JhPfdvVaoxILiPhdn8Fdw8gjV4fYqy9ldsiSA==" crossorigin="anonymous"></script>
+    
+    <!-- Code block syntax highlighting -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+ </head>
+<body>
+    <div class="container">
+        <center>
+          <div class="row">
+            <h3><b>Random Thoughts</b></h3>
+            <h6 style="margin-bottom: 0">from <a href="https://markzhang.io">Mark Zhang</a></h6>
+          </div>
+        </center>
+        <hr/>
+        <div class="post">
+    <p>Responding to a feature request, I've added support for \(LaTeX\)<br />
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</p>
+<p>Naturally, gotta have code snippet support as well!<br />
+<pre><code>for file in reversed(os.listdir("thoughts")):
+    if file.endswith(".md"):
+        with open("thoughts/" + file, "r", encoding="utf-8") as f:
+            text = f.read()</code></pre></p>
+    <p class="timestamp">Sat, May 08, 2021 06:41 AM</p>
+    <hr/>
+</div>
+<div class="post">
+    <p>Hello world! You may be wondering: "hey Mark you already have a <a href="https://blog.markzhang.io">blog</a> why do you need another place to write your stuff?" Good question, there are a few reasons:</p>
+<ol>
+<li><a href="https://blog.markzhang.io">The blog</a> is more of a place for elongated posts, that I usually write every 4 months or so.</li>
+<li>I've always wanted to have a place where I can just record down my random thoughts and then publish it without much polish.</li>
+<li>Not a big fan of posting this on social media sites as I want a site where I have full control over my content and its interactions with people.</li>
+<li>Experiement with Cloudflare Pages! This is in fact deployed there, so big kudos to them, it was really easy to set up. This whole <a href="https://github.com/MarkYHZhang/microthoughts">generator repo</a> took me like 3 hours to setup with direct deployment to <a href="https://thoughts.markzhang.io">thoughts.markzhang.io</a></li>
+</ol>
+    <p class="timestamp">Fri, May 07, 2021 11:01 PM</p>
+    <hr/>
+</div>
+
+    </div>
+</body>
+</html>
