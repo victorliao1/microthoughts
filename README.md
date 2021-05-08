@@ -14,4 +14,4 @@ python render.py
 ```
 4. Site generated to the `output` folder
 
-## Demo Site: [thoughts.markzhang.io](https://thoughts.markzhang.io)
+## Demo Site: [https://microthoughts-00og.pages.dev/](https://microthoughts-00og.pages.dev/)
