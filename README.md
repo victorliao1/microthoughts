@@ -13,3 +13,5 @@ pip install -r requirements.txt
 python render.py
 ```
 4. Site generated to the `output` folder
+
+## Demo Site: [thoughts.markzhang.io](https://thoughts.markzhang.io)
