@@ -28,8 +28,10 @@ class Renderer:
                 date = datetime.strptime(raw_timestamp, "%Y%m%d%H%M")
                 date_str = date.strftime("%a, %b %d, %Y %I:%M %p")
                 post_html = self.post_template.format(content=text_html, timestamp=date_str)
-                posts.append(post_html)
-        page_html = self.page_template.format(posts="".join(posts))
+                posts.append((date, post_html))
+        posts.sort(reverse=True)
+        posts_html = "".join([post[1] for post in posts])
+        page_html = self.page_template.format(posts=posts_html)
         with open('output/index.html', 'w+') as f:
             f.write(page_html)
     
