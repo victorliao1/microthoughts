@@ -1,4 +1,4 @@
-# MicroThoughts 🔬📝: A minimalist's static site generator for microblogging
+# MicroThoughts 🔬📝
 
 A truly minimalistic, statically generated, markdown-based micro blogging platform.
 
