@@ -1,6 +1,6 @@
 # MicroThoughts 🔬📝
 
-A truly minimalistic, statically generated, markdown-based micro blogging platform.
+A truly minimalistic, statically generated, markdown-based microblogging platform.
 
 ## Demo Site: [https://thoughts.markzhang.io](https://thoughts.markzhang.io)
 
