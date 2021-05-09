@@ -41,7 +41,7 @@ h3 {
 
 
 @media (prefers-color-scheme: dark) {
-    *:not(pre):not(code){
+    *:not(pre):not(code):not(a){
         color: #ddd;
     }
     body {
