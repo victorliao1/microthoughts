@@ -23,4 +23,4 @@ python render.py
 
 ## TODO:
 - [ ] Pagination: automatically paginate to reduce page load time
-- [ ] Permalink support for post sharing
+- [x] Permalink support for post sharing
