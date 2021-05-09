@@ -1,6 +1,8 @@
-# MicroThoughts
+# MicroThoughts 🔬📝: A minimalist's static site generator for microblogging
 
 A truly minimalistic, statically generated, markdown-based micro blogging platform.
+
+## Demo Site: [https://thoughts.markzhang.io](https://thoughts.markzhang.io)
 
 ## Notable Features
 * Simplistic setup, if you know markdown you are all set!
@@ -18,8 +20,6 @@ pip install -r requirements.txt
 python render.py
 ```
 4. Site generated to the `output` folder
-
-## Demo Site: [https://thoughts.markzhang.io](https://thoughts.markzhang.io)
 
 ## TODO:
 - [ ] Pagination: automatically paginate to reduce page load time
