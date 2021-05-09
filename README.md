@@ -2,6 +2,11 @@
 
 A truly minimalistic, statically generated, markdown-based micro blogging platform.
 
+## Notable Features
+* Simplistic setup, if you know markdown you are all set!
+* Supports LaTeX for all you mathy people. Simply use `\\( your_math_here \\)` for inline math, and `$$ more_math_here $$` for displayed mathematical expressions.
+* Supports automatic code snippet syntax highlighting. Surround your code with \`\`\` code here \`\`\` to create a code block. 
+
 ## Setup
 1. Install dependencies
 ```
@@ -15,3 +20,6 @@ python render.py
 4. Site generated to the `output` folder
 
 ## Demo Site: [https://thoughts.markzhang.io](https://thoughts.markzhang.io)
+
+## TODO:
+- [ ] Pagination: automatically paginate to reduce page load time

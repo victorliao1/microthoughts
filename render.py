@@ -1,6 +1,8 @@
 import os
-from datetime import datetime
 from distutils.dir_util import copy_tree
+from pathlib import Path
+from datetime import datetime
+
 import markdown
 
 class Renderer:
@@ -13,6 +15,11 @@ class Renderer:
 
     def _load_assets(self):
         copy_tree("assets", "output/assets")
+
+    def _write_file(self):
+        Path("output").mkdir(parents=True, exist_ok=True)
+        with open('output/index.html', 'w+') as f:
+            f.write(self.page_html)
 
     def _fill_templates(self):
         posts = []
@@ -31,13 +38,12 @@ class Renderer:
                 posts.append((date, post_html))
         posts.sort(reverse=True)
         posts_html = "".join([post[1] for post in posts])
-        page_html = self.page_template.format(posts=posts_html)
-        with open('output/index.html', 'w+') as f:
-            f.write(page_html)
+        self.page_html = self.page_template.format(posts=posts_html) 
     
     def render(self):
         self._load_assets()
         self._fill_templates()
+        self._write_file()
 
 if __name__ == '__main__':
     Renderer().render()
