@@ -91,10 +91,28 @@ body {
   }
 
 
-#permafooter {width:100%;}
-#permafooter #left{float:left;width:100px;}
-#permafooter #center{margin:0 auto;width:100px;}
-#permafooter #right{float:right;width:100px;}
+#permafooter {
+    width:100%;
+}
+
+#permafooter #left {
+    float:left;
+    width:80px;
+}
+
+#permafooter #center {
+    margin:0 auto;
+    width:140px;
+}
+
+#permafooter #right {
+    float:right;
+    width:80px;
+}
+
+.footer_link {
+    text-decoration: none;
+}
 
 h3 {
     margin-top: 0;
